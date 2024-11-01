@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    padding: 3rem;
+    color: white;
+    text-align: center;
+    background-color: #4a90e2;
+}
+
+.hero_title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero_passage {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    background-color: #ff6b6b;
+}
+
+.cta-button:hover {
+    background-color: #ff4a4a;
+}
+.about {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.about_title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.projects {
+    padding: 2rem;
+    text-align: center;
+}
+
+.projects_title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.gallery {
+    gap: 10px;
+    display: grid;
+    padding-top: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.img {
+    width: 100%;
+    height: 30vh;
+    border-radius: 8px;
+}
+
+.testimonials {
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    background-color: #4a90e2;
+}
+
+.testimonial_title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    background-color: #ff6b6b;
+}
+
+.name {
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+.footer {
+    padding: 1rem;
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: #333;
+}
+
+@media (max-width: 768px) {
+    .hero_title {
+        font-size: 2rem;
+    }
+
+    .about, .projects, .testimonials {
+        padding: 1.5rem;
+    }
+
+    .cta-button {
+        padding: 0.6rem 1.2rem;
+    }
+}
+@media screen and (orientation: landscape) and (max-width: 1024px) {
+    .hero {
+        padding: 2rem;
+    }
+    
+    .hero_title {
+        font-size: 2.2rem;
+    }
+    
+    .about, .projects, .testimonials {
+        padding: 2rem 3rem;
+    }
+
+    .gallery {
+        gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .testimonial {
+        padding: 1.5rem;
+    }
+}
